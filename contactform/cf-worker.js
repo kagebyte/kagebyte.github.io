@@ -19,7 +19,7 @@ async function handleRequest(request) {
     });
   } else if (new URL(request.url).pathname == "/" && !request.body) {
     return Response.redirect(
-      "https://LinuxGuy312.github.io",
+      "https://kagebyte.github.io",
       301
     );
   } else {
