@@ -89,7 +89,7 @@ h1:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: contain; /* or object-fit: cover; depending on your preference */
+    object-fit: contain; /* or object-fit: cover;depending on your preference */
 }
 
 .modal.show{
