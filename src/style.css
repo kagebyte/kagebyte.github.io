@@ -65,15 +65,22 @@ h1:hover {
     transition: all 300ms linear;
 }
 
-.modal{
+.modal {
     position: fixed;
-    width: 100%;
-    height: 100vh;
+    top: 50%; /* Adjust top positioning */
+    left: 50%; /* Adjust left positioning */
+    transform: translate(-50%, -50%);
+    width: 80%; /* Adjust width as needed */
+    max-width: 600px; /* Adjust max-width as needed */
+    height: auto; /* or fixed height */
     background-color: #000000cc;
-    z-index: -1;
+    z-index: 99;
     opacity: 0;
     transition: .5s;
     backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .modal img{
