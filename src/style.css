@@ -71,7 +71,7 @@ h1:hover {
     left: 50%; /* Adjust left positioning */
     transform: translate(-50%, -50%);
     width: 80%; /* Adjust width as needed */
-    max-width: 600px; /* Adjust max-width as needed */
+    max-width: 600px; 
     height: auto; /* or fixed height */
     background-color: #000000cc;
     z-index: 99;
