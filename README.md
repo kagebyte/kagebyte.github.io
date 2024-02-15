@@ -1,20 +1,23 @@
-## Get This Cool Website for yourself
-- **[Create a Fork](https://github.com/LinuxGuy312/LinuxGuy312.github.io/fork)**
+# 🚀 Deploying a Contact Form on Cloudflare Workers
 
-## Deployment of Contact Form on Cloudflare Workers
+## Setting Up the Required Code:
 
-**Setup The Code Required:**
+1. Begin by creating a Telegram bot using [BotFather](https://t.me/botfather) and obtain its API Token.
+2. Activate your bot by sending `/start` in its Private Messages.
+3. Navigate to [Yoshitsu](https://yoshitsubot.t.me?start=github) and retrieve your User ID using the `/id` command.
+4. Edit the `cf-worker.js` file located in your project directory, adding your Bot token and User ID.
+5. Ensure to save and apply the modifications to the `cf-worker.js` file.
 
-- Create a Telegram bot from [BotFather](https://t.me/botfather) and copy its API Token
-- Start your newly created bot by sending `/start` in its PM
-- Then goto [Yoshitsu](https://yoshitsubot.t.me?start=github) and send `/id` and copy your user id
-- Open [cf-worker.js](/contactform/cf-worker.js) and edit your Bot token and User ID you got from earlier.
-- Copy the edited `cf-worker.js` to your clipboard.
+## Deploying the Cloudflare Worker:
 
-**Deploy Cloudflare worker:**
-- Go to [Cloudflare Workers](https://workers.cloudflare.com) & Create an Account.
-- After that, Create a worker and Edit it to Paste the Javascript Code you Copied earlier.
-- Save and Deploy the worker and copy its URL.
+1. Access [Cloudflare Workers](https://workers.cloudflare.com) and create an account if you haven't already.
+2. Craft a new worker and paste the JavaScript code from your modified `cf-worker.js` file.
+3. Activate and deploy the worker to generate its unique URL.
 
-**Add in your website:**
-- Just replace the [form_worker_url](/index.html#L129) in index.html to your cloudflare worker URL and you are good to go!
+## Integrating with Your Website:
+
+1. Navigate to your website's codebase.
+2. Locate the `[form_worker_url]` placeholder within the `index.html` file.
+3. Replace the placeholder with the URL of your deployed Cloudflare worker.
+
+---
