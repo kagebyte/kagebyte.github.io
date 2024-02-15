@@ -66,38 +66,31 @@ h1:hover {
 }
 
 
-.modal-video {
+.modal {
     position: fixed;
-    top: 50%;
-    left: 50%;
+    top: 50%; /* Adjust top positioning */
+    left: 50%; /* Adjust left positioning */
     transform: translate(-50%, -50%);
-    width: 80%; /* Adjust width as needed */
-    max-width: 600px; 
-    height: auto; /* or fixed height */
+    width: 100%; /* Adjust width as needed */
+    max-width: 600px; /* Adjust max-width as needed */
+    height: 80%; /* or fixed height */
     background-color: #000000cc;
     z-index: 99;
-    opacity: 1;
+    opacity: 0;
+    transition: .5s;
+    backdrop-filter: blur(5px);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.modal-video video {
-    width: 100%;
-    height: auto;
-    max-height: 80vh; /* Adjust as needed */
-    object-fit: contain;
+.modal-show {
+opacity: 1;
+z-index:99 ;
+
+
+
 }
-
-.modal-show-video {
-    display: block;
-}
-
-.modal-show-video video {
-    display: block;
-}
-
-
 
 .container {
     font-family: 'Poppins', sans-serif;
